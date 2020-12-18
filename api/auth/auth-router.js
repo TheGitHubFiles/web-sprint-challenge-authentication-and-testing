@@ -24,7 +24,7 @@ const checker = async (req, res, next) => {
       res.status(400).json("username taken");
     } else {
       next();
-      }
+    }
   } catch (err) {
     res.status(404).json(err.message);
   }
